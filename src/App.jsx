@@ -36,7 +36,7 @@ export default class App extends Component{
 		)
 		
 		this.setState({isLoadingB:true})
-        await axios.get(`http://3.21.76.222:9000/listing/tableA`).then(
+        await axios.get(`http://3.21.76.222:9000/listing/tableB`).then(
 			response => {
 				response.data.code === 500?
 					this.setState({isLoadingB:false,errB:response.data.msg}):
